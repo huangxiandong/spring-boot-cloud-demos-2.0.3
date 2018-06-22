@@ -2,16 +2,14 @@ package com.xiyuan.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(basePackages = "com.xiyuan")
 @EnableAutoConfiguration
-@EnableConfigServer
-public class ConfigServerApplication {
+public class FrontServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigServerApplication.class, args);
+        SpringApplication.run(FrontServiceApplication.class, args);
     }
 
 }
