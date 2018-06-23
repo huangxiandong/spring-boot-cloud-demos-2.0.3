@@ -10,7 +10,7 @@ https://cloud.spring.io/spring-cloud-static/Finchley.RELEASE/single/spring-cloud
     http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html  
     https://stackoverflow.com/questions/6481627/java-security-illegal-key-size-or-default-parameters  
 
-2. 安装 Rabbit, ElasticSearch, 部署 zipkin-server    
+2. 安装 Rabbit, ElasticSearch, 部署 zipkin-server(详情参考附录)    
 
 3. 修改配置  
     config-server/src/main/resources/bootstrap.properties  
