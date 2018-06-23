@@ -1,4 +1,4 @@
-POST http://localhost:8880/admin/bus/refresh
+POST http://localhost:8880/actuator/bus-refresh
 Authorization: Basic test 123456
 
 ####

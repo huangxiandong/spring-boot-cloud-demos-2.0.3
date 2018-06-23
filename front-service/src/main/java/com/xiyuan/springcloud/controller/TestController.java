@@ -1,5 +1,6 @@
 package com.xiyuan.springcloud.controller;
 
+import com.xiyuan.springcloud.bean.AmqpSender;
 import com.xiyuan.springcloud.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,9 +15,18 @@ public class TestController {
     @Autowired
     private TestService testService;
 
+    @Autowired
+    private AmqpSender amqpSender;
+
     @RequestMapping(value = "/test")
     public Object test() {
         return testService.test();
+    }
+
+    @RequestMapping(value = "/test/amqp")
+    public Object testAmqp(String msg) {
+        amqpSender.justTest(msg == null ? "" : msg);
+        return "success";
     }
 
 }
