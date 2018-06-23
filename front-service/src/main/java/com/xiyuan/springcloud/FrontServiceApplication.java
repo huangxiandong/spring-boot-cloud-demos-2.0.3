@@ -9,10 +9,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(basePackages = "com.xiyuan")
-@EnableAutoConfiguration
 @EnableFeignClients(defaultConfiguration = DefaultFeignClientConfig.class)
 @EnableCircuitBreaker
 @EnableHystrixDashboard
+@EnableAutoConfiguration
 public class FrontServiceApplication {
 
     public static void main(String[] args) {

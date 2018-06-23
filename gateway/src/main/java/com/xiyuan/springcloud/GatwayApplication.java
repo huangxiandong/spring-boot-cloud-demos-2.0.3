@@ -6,8 +6,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(basePackages = "com.xiyuan")
-@EnableAutoConfiguration
 @EnableZuulProxy
+@EnableAutoConfiguration
 public class GatwayApplication {
 
     public static void main(String[] args) {

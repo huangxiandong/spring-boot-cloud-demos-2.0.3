@@ -1,0 +1,11 @@
+POST http://localhost:8880/encrypt
+Authorization: Basic test 123456
+
+123456
+####
+POST http://localhost:8880/decrypt
+Authorization: Basic test 123456
+
+AQCEEN9VZrCZ00BBjr3mizOXaYq83Am45gKjYwb8vPWpL1k+P3y60Hkf+42SV1xqWJCVpyDXnY9opzuv1+U67UIVLa2kHXaA/7OCHRQFwFPBnrZ1WvbWIcFjQ4zZv7TvGc9LSEQdpsoybolgeWobng6O+awQxLg6dlSDQrZtVdliem2egIsyPK1fS9k8/daCikxoRXDwoCRWW1a/at9pMQ7EexvZVdtnVjyq9gMF6gRM1rbjHp+BVzCO/LaS3GkuG/d38muOCUv36pYYTm86CzO4t6Y/lK0hzqnfrn9exyZq52xipd5gw+QaechVbWA91u9PLYGvFBfvt31x5t64NQafPPjBk+E9pybdHDOIijsX5KBY7b3uHDW6tlPcGZCiGMNhXuop5z6O5uUpmOnl8VhE
+
+###

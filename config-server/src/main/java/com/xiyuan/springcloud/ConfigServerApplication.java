@@ -6,8 +6,8 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(basePackages = "com.xiyuan")
-@EnableAutoConfiguration
 @EnableConfigServer
+@EnableAutoConfiguration
 public class ConfigServerApplication {
 
     public static void main(String[] args) {
