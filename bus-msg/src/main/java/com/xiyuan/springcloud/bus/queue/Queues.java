@@ -1,4 +1,4 @@
-package com.xiyuan.bus.queue;
+package com.xiyuan.springcloud.bus.queue;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;

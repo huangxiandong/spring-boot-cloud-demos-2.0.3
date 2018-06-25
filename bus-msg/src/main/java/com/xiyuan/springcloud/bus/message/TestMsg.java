@@ -1,4 +1,4 @@
-package com.xiyuan.bus.message;
+package com.xiyuan.springcloud.bus.message;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

@@ -1,7 +1,7 @@
 package com.xiyuan.springcloud.receiver;
 
-import com.xiyuan.bus.message.TestMsg;
-import com.xiyuan.bus.queue.Queues;
+import com.xiyuan.springcloud.bus.message.TestMsg;
+import com.xiyuan.springcloud.bus.queue.Queues;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

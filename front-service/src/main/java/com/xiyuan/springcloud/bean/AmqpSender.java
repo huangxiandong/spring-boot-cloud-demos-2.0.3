@@ -1,7 +1,7 @@
 package com.xiyuan.springcloud.bean;
 
-import com.xiyuan.bus.message.TestMsg;
-import com.xiyuan.bus.queue.Queues;
+import com.xiyuan.springcloud.bus.message.TestMsg;
+import com.xiyuan.springcloud.bus.queue.Queues;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
