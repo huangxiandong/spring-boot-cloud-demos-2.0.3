@@ -1,6 +1,6 @@
 package com.xiyuan.springcloud;
 
-import com.xiyuan.springcloud.bean.DefaultFeignClientConfig;
+import com.xiyuan.springcloud.feign.config.DefaultFeignClientConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;

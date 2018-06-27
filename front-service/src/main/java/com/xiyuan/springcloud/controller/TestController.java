@@ -19,8 +19,8 @@ public class TestController {
     private AmqpSender amqpSender;
 
     @RequestMapping(value = "/test")
-    public Object test() {
-        return testService.test();
+    public Object test(String msg) {
+        return testService.test(msg);
     }
 
     @RequestMapping(value = "/test/amqp")

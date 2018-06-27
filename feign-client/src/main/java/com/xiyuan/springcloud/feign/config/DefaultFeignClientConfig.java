@@ -1,4 +1,4 @@
-package com.xiyuan.springcloud.bean;
+package com.xiyuan.springcloud.feign.config;
 
 import feign.auth.BasicAuthRequestInterceptor;
 import org.springframework.beans.factory.annotation.Value;

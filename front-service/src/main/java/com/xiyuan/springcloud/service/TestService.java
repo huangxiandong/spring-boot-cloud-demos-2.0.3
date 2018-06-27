@@ -1,7 +1,7 @@
 package com.xiyuan.springcloud.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.xiyuan.springcloud.feign.BackendServiceClient;
+import com.xiyuan.springcloud.feign.client.BackendServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,14 +18,14 @@ public class TestService {
     private BackendServiceClient backendServiceClient;
 
     @HystrixCommand(fallbackMethod = "defaultFallback")
-    public Object test() {
-        return backendServiceClient.test();
+    public Object test(String msg) {
+        return backendServiceClient.test(msg == null ? "just test" : msg);
     }
 
-    public Object defaultFallback() {
+    public Object defaultFallback(String msg) {
         Map<String, Object> res = new LinkedHashMap<>();
         res.put("success", false);
-        res.put("message", "fallback");
+        res.put("message", msg);
         return res;
     }
 

@@ -35,8 +35,8 @@ public class TestController {
     private MongoTemplate mongoTemplate;
 
     @RequestMapping(value = "/test")
-    public String test() {
-        return "test success from " + serverPort + ": " + testRefresh;
+    public String test(String msg) {
+        return "test success from " + serverPort + ": " + testRefresh + " msg: " + msg;
     }
 
     @RequestMapping(value = "/test/log")
