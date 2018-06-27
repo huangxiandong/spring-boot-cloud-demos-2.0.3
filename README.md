@@ -29,6 +29,33 @@ https://cloud.spring.io/spring-cloud-static/Finchley.RELEASE/single/spring-cloud
     spring.rabbitmq.username=RABBIT_USER
     spring.rabbitmq.password=RABBIT_PASSWORD
     ```
+    configs/dev/backend-service.properties
+    ```
+    spring.datasource.url=jdbc:mysql://HOST:PORT/DB?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+    spring.datasource.username=
+    spring.datasource.password=
+    spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+    
+    mybatis-plus.mapper-locations=classpath:/mapper/xml/*.xml, classpath:/mapper/*.xml
+    mybatis-plus.type-aliases-package=com.xiyuan.springcloud.mybatis.entity
+    mybatis-plus.global-config.refresh-mapper=true
+    
+    spring.redis.host=HOST
+    spring.redis.password=123456
+    spring.redis.port=6379
+    spring.redis.database=0
+    spring.redis.timeout=5000ms
+    spring.redis.jedis.pool.max-active=150
+    spring.redis.jedis.pool.max-idle=10
+    spring.redis.jedis.pool.min-idle=0
+    spring.redis.jedis.pool.max-wait=3000ms
+    
+    spring.data.mongodb.uri=mongodb://USER:PASSWORD@HOST:PORT/DB
+    ```
+    删除 backend-service/src/main/java/com/xiyuan/springcloud/mybatis 目录下除 MpGenerator 以外的所有文件    
+    删除 backend-service/src/main/resources/mapper 目录  
+    运行 backend-service/src/main/java/com/xiyuan/springcloud/mybatis/MpGenerator.java 生成dao、mapper、entity、xml  
+   
     
 # 启动
 启动顺序如下：  
